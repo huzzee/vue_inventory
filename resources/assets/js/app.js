@@ -13,6 +13,8 @@ Vue.use(VueRouter);
 import VueAxios from 'vue-axios';
 import axios from 'axios';
 Vue.use(VueAxios, axios);
+import App from './App.vue'
+
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -20,5 +22,5 @@ Vue.use(VueAxios, axios);
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-const router = new VueRouter({ mode: 'history', routes: routes});
+const router = new VueRouter({ mode: 'history'});
 new Vue(Vue.util.extend({ router },App)).$mount('#app');
