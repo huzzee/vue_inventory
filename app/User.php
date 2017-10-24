@@ -15,7 +15,8 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'name', 'username', 'password','profile_image','contact_no',
+        'email','gender','status','designation_id','department_id'
     ];
 
     /**
@@ -26,4 +27,15 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    public function designations()
+    {
+        return $this->belongsTo('App\models\Designation','designation_id');
+    }
+
+
+    public function my_departments()
+    {
+        return $this->belongsTo('App\models\MyDepartment','department_id');
+    }
 }
