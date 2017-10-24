@@ -39,7 +39,7 @@
 <body>
 
 <div id="app">
-
+    {{--<input type="hidden" value="{{ url('/') }}" v-model="base_url">--}}
 
 </div>
 <!-- Navigation Bar-->
@@ -68,11 +68,11 @@
 <script src="{{ asset('assets/plugins/counterup/jquery.counterup.min.js') }}"></script>
 
 <!--Morris Chart-->
-<script src="{{ asset('assets/plugins/morris/morris.min.js') }}"></script>
+{{--<script src="{{ asset('assets/plugins/morris/morris.min.js') }}"></script>--}}
 <script src="{{ asset('assets/plugins/raphael/raphael-min.js') }}"></script>
 
 <!-- Dashboard init -->
-<script src="{{ asset('assets/pages/jquery.dashboard.js') }}"></script>
+{{--<script src="{{ asset('assets/pages/jquery.dashboard.js') }}"></script>--}}
 
 <!-- App js -->
 <script src="{{ asset('assets/js/jquery.core.js') }}"></script>

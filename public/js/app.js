@@ -1029,7 +1029,9 @@ var routes = [{
  */
 
 var router = new __WEBPACK_IMPORTED_MODULE_1_vue_router__["a" /* default */]({ mode: 'history', routes: routes });
-new __WEBPACK_IMPORTED_MODULE_0_vue___default.a(__WEBPACK_IMPORTED_MODULE_0_vue___default.a.util.extend({ router: router }, __WEBPACK_IMPORTED_MODULE_4__App_vue___default.a)).$mount('#app');
+new __WEBPACK_IMPORTED_MODULE_0_vue___default.a(__WEBPACK_IMPORTED_MODULE_0_vue___default.a.util.extend({
+    router: router
+}, __WEBPACK_IMPORTED_MODULE_4__App_vue___default.a)).$mount('#app');
 
 /***/ }),
 /* 11 */
@@ -15523,14 +15525,24 @@ module.exports = function normalizeComponent (
 
 /***/ }),
 /* 37 */
-/***/ (function(module, exports) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
 //
 //
 //
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    data: function data() {
+        return {
+            base_url: 'public/'
+        };
+    }
+});
 
 /***/ }),
 /* 38 */
@@ -15540,7 +15552,15 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [_c("my-header"), _vm._v(" "), _c("router-view")], 1)
+  return _c(
+    "div",
+    [
+      _c("my-header"),
+      _vm._v(" "),
+      _c("router-view", { attrs: { pat: { base_url: _vm.base_url } } })
+    ],
+    1
+  )
 }
 var staticRenderFns = []
 render._withStripped = true

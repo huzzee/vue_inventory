@@ -24,6 +24,7 @@ Vue.component('nav-bar',navBar);
 
 
 
+
 const routes = [
     {
         name: 'homePage',
@@ -43,4 +44,6 @@ const routes = [
  */
 
 const router = new VueRouter({ mode: 'history',routes: routes});
-new Vue(Vue.util.extend({ router },App)).$mount('#app');
+new Vue(Vue.util.extend({
+    router
+},App)).$mount('#app');
