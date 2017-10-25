@@ -17,7 +17,7 @@ import App from './App.vue'
 import navBar from './components/headers/navbar.vue';
 import Header from './components/headers/header.vue';
 import homePage from './components/Pagecontent/home.vue';
-import avi from './components/Pagecontent/avi.vue';
+
 
 Vue.component('my-header',Header);
 Vue.component('nav-bar',navBar);
@@ -31,11 +31,7 @@ const routes = [
         path: '/',
         component: homePage
     },
-    {
-        name: 'avi',
-        path: '/avi',
-        component: avi
-    }
+
 ];
 /**
  * Next, we will create a fresh Vue application instance and attach it to
